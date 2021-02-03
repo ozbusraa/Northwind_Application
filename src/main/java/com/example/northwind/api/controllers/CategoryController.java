@@ -18,7 +18,7 @@ import com.example.northwind.entities.concreates.Category;
 import com.example.northwind.entities.concreates.Product;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v2")
 public class CategoryController {
 
 	@Autowired
