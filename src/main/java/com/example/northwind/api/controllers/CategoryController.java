@@ -24,10 +24,10 @@ public class CategoryController {
 	@Autowired
 	ICategoryService categoryService;
 	
-//	@GetMapping("/categories")
-//	public List<Category> getAll(){
-//		return categoryService.getAll();
-//	}
+	@GetMapping("/categories")
+	public List<Category> getAll(){
+		return categoryService.getAll();
+	}
 	
 
 	@GetMapping("/categories/{id}")

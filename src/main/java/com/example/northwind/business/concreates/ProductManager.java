@@ -36,7 +36,6 @@ public class ProductManager implements IProductService{
 		List<Product> productsWithSameCategoryId = productRepository.findByCategoryId(categoryId);
 		if (productName.length()< 2) {
 			throw new Exception("Product name is too short");
-			//return productRepository.findById(-1).orElseThrow(()->new Exception("Product name is too short"));
 		}
 		else if (productsWithSameCategoryId.size()>=10) {
 			throw new Exception("You can not add new product for this category");
